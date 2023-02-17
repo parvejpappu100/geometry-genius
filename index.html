@@ -30,12 +30,12 @@
                     </div>
                     <div class="card-body">
                       <h5 class="card-title my-3 fs-3 fw-semibold">Triangle</h5>
-                      <p class="card-text fs-5">Area (A) = 0.5 * b * h</p>
-                      <input class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="b" type="text" size="4">
+                      <p class="card-text fs-5">Area (A) = 0.5 * <span id="base">b</span> * <span id="hight">h</span></p>
+                      <input id="base-total" class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="b" type="text" size="4">
                       <label class="mx-2 fs-5" for="">cm</label>
-                      <input class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="h" type="text" size="4">
+                      <input id="higit-total" class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="h" type="text" size="4">
                       <label class="mx-2 fs-5" for="">cm</label>
-                      <button type="button" class="btn btn-primary btn-lg my-3 px-5 fw-semibold">Calculate</button>
+                      <button id="calculate-triangle" type="button" class="btn btn-primary btn-lg my-3 px-5 fw-semibold">Calculate</button>
                     </div>
                   </div>
                 </div>
@@ -46,12 +46,12 @@
                     </div>
                     <div class="card-body">
                       <h5 class="card-title my-3 fs-3 fw-semibold">Reactangle</h5>
-                      <p class="card-text fs-5">Area (A) = w * I</p>
-                      <input class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="w" type="text" size="4">
+                      <p class="card-text fs-5">Area (A) = <span id="width">w</span> * <span id="length">l</span></p>
+                      <input id="width-total" class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="w" type="text" size="4">
                       <label class="mx-2 fs-5" for="">cm</label>
-                      <input class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="I" type="text" size="4">
+                      <input id="length-total" class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="l" type="text" size="4">
                       <label class="mx-2 fs-5" for="">cm</label>
-                      <button type="button" class="btn btn-primary btn-lg my-3 px-5 fw-semibold">Calculate</button>
+                      <button id="calculate-reactangle" type="button" class="btn btn-primary btn-lg my-3 px-5 fw-semibold">Calculate</button>
                     </div>
                   </div>
                 </div>
@@ -62,24 +62,24 @@
                     </div>
                     <div class="card-body">
                       <h5 class="card-title my-3 fs-3 fw-semibold">Parallelogram</h5>
-                      <p class="card-text fs-5">Area (A) = b * h</p>
-                      <input class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="b" type="text" size="4">
+                      <p class="card-text fs-5">Area (A) =<span id="parallelogram-base">b</span>*<span id="parallelogram-hight">h</span></p>
+                      <input id="parallelogram-base-total" class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="b" type="text" size="4">
                       <label class="mx-2 fs-5" for="">cm</label>
-                      <input class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="h" type="text" size="4">
+                      <input id="parallelogram-hight-total" class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="h" type="text" size="4">
                       <label class="mx-2 fs-5" for="">cm</label>
-                      <button type="button" class="btn btn-primary btn-lg my-3 px-5 fw-semibold">Calculate</button>
+                      <button id="calculate-parallelogram" type="button" class="btn btn-primary btn-lg my-3 px-5 fw-semibold">Calculate</button>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card h-100 text-center ">
                     <div class="card-body">
-                        <h3 class="fs-5 fw-semibold text-center">Area Calculation</h3>
+                        <h3 class="fs-5 fw-semibold text-center"><u>Area Calculation</u></h3>
                         <div>
                             <p class="fs-5 fw-semibold">1.Triangle <span id="result-triangle" class="mx-2">0.5bh</span> cm<sup>2</sup></p>
                             <button type="button" class="btn btn-primary">Convert to m<sup>2</sup></button>
 
-                            <p class="fs-5 fw-semibold">2.Reactangle <span id="result-reactangle" class="mx-2">wI</span> cm<sup>2</sup></p>
+                            <p class="fs-5 fw-semibold">2.Reactangle <span id="result-reactangle" class="mx-2">wl</span> cm<sup>2</sup></p>
                             <button type="button" class="btn btn-primary">Convert to m<sup>2</sup></button>
 
                             <p class="fs-5 fw-semibold">3.Parallelogram <span id="result-parallelogram" class="mx-2">bh</span> cm<sup>2</sup></p>
@@ -110,7 +110,7 @@
                       <label class="mx-2 fs-5" for="">cm</label>
                       <input class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="d2" type="text" size="4">
                       <label class="mx-2 fs-5" for="">cm</label>
-                      <button type="button" class="btn btn-primary btn-lg my-3 px-5 fw-semibold">Calculate</button>
+                      <button id="calculate-rhombus" type="button" class="btn btn-primary btn-lg my-3 px-5 fw-semibold">Calculate</button>
                     </div>
                   </div>
                 </div>
