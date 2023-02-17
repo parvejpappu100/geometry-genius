@@ -91,7 +91,7 @@
                             <p class="fs-5 fw-semibold">5.Pentagon <span id="result-pentagon" class="mx-2">0.5pb</span> cm<sup>2</sup></p>
                             <button type="button" class="btn btn-primary">Convert to m<sup>2</sup></button>
 
-                            <p class="fs-5 fw-semibold">6.Ellipse <span id="result-pllipse" class="mx-2">3.14ab</span> cm<sup>2</sup></p>
+                            <p class="fs-5 fw-semibold">6.Ellipse <span id="result-ellipse" class="mx-2">3.14ab</span> cm<sup>2</sup></p>
                             <button type="button" class="btn btn-primary">Convert to m<sup>2</sup></button>
                             </div>
 
@@ -105,10 +105,10 @@
                     </div>
                     <div class="card-body">
                       <h5 class="card-title my-3 fs-3 fw-semibold">Rhombus</h5>
-                      <p class="card-text fs-5">Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
-                      <input class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="d1" type="text" size="4">
+                      <p class="card-text fs-5">Area (A) = 0.5 *<span id="rhombus-d1">d<sub>1</sub></span> *<span id="rhombus-d2">d<sub>2</sub></span></p>
+                      <input id="rhombus-d1-total" class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="d1" type="text" size="4">
                       <label class="mx-2 fs-5" for="">cm</label>
-                      <input class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="d2" type="text" size="4">
+                      <input id="rhombus-d2-total" class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="d2" type="text" size="4">
                       <label class="mx-2 fs-5" for="">cm</label>
                       <button id="calculate-rhombus" type="button" class="btn btn-primary btn-lg my-3 px-5 fw-semibold">Calculate</button>
                     </div>
@@ -121,12 +121,12 @@
                     </div>
                     <div class="card-body">
                       <h5 class="card-title my-3 fs-3 fw-semibold">Pentagon</h5>
-                      <p class="card-text fs-5">Area (A) = 0.5 * p * b</p>
-                      <input class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="p" type="text" size="4">
+                      <p class="card-text fs-5">Area (A) = 0.5 *<span id="range">p</span>*<span id="perpendicular-distance">b</span></p>
+                      <input id="pentagon-range-total" class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="p" type="text" size="4">
                       <label class="mx-2 fs-5" for="">cm</label>
-                      <input class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="b" type="text" size="4">
+                      <input id="perpendicular-distance-total" class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="b" type="text" size="4">
                       <label class="mx-2 fs-5" for="">cm</label>
-                      <button type="button" class="btn btn-primary btn-lg my-3 px-5 fw-semibold">Calculate</button>
+                      <button id="calculate-pentagon" type="button" class="btn btn-primary btn-lg my-3 px-5 fw-semibold">Calculate</button>
                     </div>
                   </div>
                 </div>
@@ -137,12 +137,12 @@
                     </div>
                     <div class="card-body">
                       <h5 class="card-title my-3 fs-3 fw-semibold">Ellipse</h5>
-                      <p class="card-text fs-5">Area (A) = 3.14 * ab</p>
-                      <input class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="a" type="text" size="4">
+                      <p class="card-text fs-5">Area (A) = 3.14 *<span id="value-of-a">a</span><span id="value-of-b">b</span></p>
+                      <input id="value-of-a-field" class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="a" type="text" size="4">
                       <label class="mx-2 fs-5" for="">cm</label>
-                      <input class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="b" type="text" size="4">
+                      <input id="value-of-b-field" class="bg-body-secondary border-0 rounded-2 px-2 py-2" placeholder="b" type="text" size="4">
                       <label class="mx-2 fs-5" for="">cm</label>
-                      <button type="button" class="btn btn-primary btn-lg my-3 px-5 fw-semibold">Calculate</button>
+                      <button id="calculate-ellipse" type="button" class="btn btn-primary btn-lg my-3 px-5 fw-semibold">Calculate</button>
                     </div>
                   </div>
                 </div>
