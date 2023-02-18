@@ -13,3 +13,11 @@ document.getElementById("reactangle-card").addEventListener("mouseenter",functio
 document.getElementById("reactangle-card").addEventListener("mouseleave",function(){
     getPreviousColor("reactangle-card");
 });
+
+// * add random background color of Parallelogram card:
+document.getElementById("parallelogram-card").addEventListener("mouseenter",function(){
+    setRandomColor("parallelogram-card");
+});
+document.getElementById("parallelogram-card").addEventListener("mouseleave",function(){
+    getPreviousColor("parallelogram-card");
+})
