@@ -16,3 +16,9 @@ function setTextElementValue(elementId,value){
     const element = document.getElementById(elementId);
     element.innerText = value;
 };
+
+// * Get result area element by id:
+function getResultAreaElementById(elementId){
+    const resultArea =document.getElementById(elementId);
+    return resultArea;
+};

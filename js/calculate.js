@@ -10,9 +10,13 @@ document.getElementById("calculate-triangle").addEventListener('click',function(
     // * Set higit total value in h:
     setTextElementValue("hight",hightTotal);
     // * Get final result:
-    const getResult = 0.5 * baseTotal * hightTotal;
+    const getResult = (0.5 * baseTotal * hightTotal).toFixed(2);
     // * Set final result in the calculation area:
     setTextElementValue("result-triangle",getResult);
+    // * Get result area:
+    const triangleResultArea = getResultAreaElementById("triangle-result-area");
+    // * display block result area:
+    triangleResultArea.style.display = "block";
 });
 
 // * Reactangle:
@@ -27,9 +31,13 @@ document.getElementById("calculate-reactangle").addEventListener('click',functio
     // * Set length total value in l:
     setTextElementValue('length',lengthTotal);
     // * Get the final result:
-    const getResult = widthTotal * lengthTotal;
+    const getResult = (widthTotal * lengthTotal).toFixed(2);
     // *  Set final result in the calculation area:
     setTextElementValue("result-reactangle",getResult);
+    // * Get result area:
+    const reactangleResultArea = getResultAreaElementById("reactangle-result-area");
+    // * display block result area:
+    reactangleResultArea.style.display = "block";
 });
 
 // * Parallelogram:
@@ -44,9 +52,13 @@ document.getElementById("calculate-parallelogram").addEventListener("click",func
     // * set parallelogram-hight-total value in h:
     setTextElementValue("parallelogram-hight",parallelogramHigtTotal);
     // * Get final result:
-    const finalResult = parallelogramBaseTotal * parallelogramHigtTotal;
+    const finalResult = (parallelogramBaseTotal * parallelogramHigtTotal).toFixed(2);
     // * set final result value in parallelogram calculation area:
     setTextElementValue("result-parallelogram",finalResult);
+    // * Get result area:
+    const parallelogramResultArea = getResultAreaElementById("parallelogram-result-area");
+    // * display block result area:
+    parallelogramResultArea.style.display = "block";
 });
 
 // * Rhombus:
@@ -61,9 +73,13 @@ document.getElementById("calculate-rhombus").addEventListener("click",function()
     // * set the value of d2:
     setTextElementValue("rhombus-d2",rhombusD2Total);
     // * Get the final result:
-    const finalResult = 0.5 * rhombusD1Total * rhombusD2Total;
+    const finalResult = (0.5 * rhombusD1Total * rhombusD2Total).toFixed(2);
     // * set the final result in rhombus calculation area:
     setTextElementValue("result-rhombus",finalResult);
+    // * Get result area:
+    const rhombusResultArea = getResultAreaElementById("rhombus-result-are");
+    // * display block result area:
+    rhombusResultArea.style.display = "block";
 });
 
 // * Pentagon:
@@ -78,9 +94,13 @@ document.getElementById("calculate-pentagon").addEventListener("click",function(
     // * set perpendicular-distance-total value into perpendicular-distance:
     setTextElementValue("perpendicular-distance",perpendicularDistanceTotal);
     // * get final resut:
-    const finalResult = 0.5 * rangeValue * perpendicularDistanceTotal;
+    const finalResult = (0.5 * rangeValue * perpendicularDistanceTotal).toFixed(2);
     // * set the final result:
     setTextElementValue("result-pentagon",finalResult);
+     // * Get result area:
+     const pentagonResultArea = getResultAreaElementById("pentagon-result-area");
+     // * display block result area:
+     pentagonResultArea.style.display = "block";
 });
 
 // * Ellipse:
@@ -95,7 +115,11 @@ document.getElementById("calculate-ellipse").addEventListener("click",function()
     // * set the valueOfB into b:
     setTextElementValue("value-of-b",valueOfB);
     // * get the final result:
-    const finalResult =  3.14 * valueOfA * valueOfB;
+    const finalResult = (3.14 * valueOfA * valueOfB).toFixed(2);
     // * set the final result:
     setTextElementValue("result-ellipse",finalResult);
+    // * Get result area:
+    const ellipseResultArea = getResultAreaElementById("ellipse-result-area");
+    // * display block result area:
+    ellipseResultArea.style.display = "block";
 });
