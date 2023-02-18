@@ -3,6 +3,10 @@ function getInputElementValueById(elementId){
     const element = document.getElementById(elementId);
     const elementValueString = element.value ;
     const elementValue = parseFloat(elementValueString);
+    if(elementValue < 0){
+        alert("please provide positive number.")
+        return getInputElementValueById ();
+    }
     element.value ="";
     if(isNaN(elementValue)){
         alert("Please provide a number.")
