@@ -37,3 +37,11 @@ document.getElementById("pentagon-card").addEventListener("mouseenter",function(
 document.getElementById("pentagon-card").addEventListener("mouseleave",function(){
     getPreviousColor("pentagon-card");
 });
+
+// * add random background color of ellipse:
+document.getElementById("ellipse-card").addEventListener('mouseenter',function(){
+    setRandomColor('ellipse-card');
+});
+document.getElementById("ellipse-card").addEventListener("mouseleave",function(){
+    getPreviousColor("ellipse-card");
+});
