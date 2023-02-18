@@ -6,3 +6,10 @@ document.getElementById("triangle-card").addEventListener("mouseleave",function(
     getPreviousColor("triangle-card")
 });
 
+// * add random background color of ractangle card:
+document.getElementById("reactangle-card").addEventListener("mouseenter",function(){
+    setRandomColor("reactangle-card");
+});
+document.getElementById("reactangle-card").addEventListener("mouseleave",function(){
+    getPreviousColor("reactangle-card");
+});
