@@ -23,7 +23,7 @@
     </header>
     <main>
         <!--* Triange,Reactangles and ellipse  -->
-        <section class="container-lg my-5">
+        <section class="container-lg mx-auto my-5">
             <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
                 <div class="col">
                   <div id="triangle-card" class="card h-100 text-center">
@@ -74,39 +74,39 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100 text-center ">
-                    <div class="card-body">
+                  <div class="card h-100  ">
+                    <div class="card-body text-center">
                         <h3 class="fs-5 fw-semibold text-center"><u>Area Calculation</u></h3>
                         <div>
                           <ol>
                              <li id="triangle-result-area">
-                              <p class="fs-5 fw-semibold">1. Triangle <span id="result-triangle" class="mx-2">0.5bh</span> cm<sup>2</sup></p>
-                              <button type="button" class="btn btn-primary">Convert to m<sup>2</sup></button>
+                              <h4 class="fs-5 fw-semibold">1.Triangle <span id="result-triangle">0.5bh</span><span id="t-unit-cm">cm<sup>2</sup></span><span id="t-unit-m">m<sup>2</sup></span></h4>
+                              <button id="t-convert-btn" type="button" class="btn btn-primary">Convert to m<sup>2</sup></button>
                              </li>
 
                             <li id="reactangle-result-area">
-                              <p class="fs-5 fw-semibold">2. Reactangle <span id="result-reactangle" class="mx-2">wl</span> cm<sup>2</sup></p>
-                              <button type="button" class="btn btn-primary">Convert to m<sup>2</sup></button>
+                              <h4 class="fs-5 fw-semibold">2. Reactangle <span id="result-reactangle">wl</span><span id="r-unit-cm">cm<sup>2</span><span id="r-unit-m">m<sup>2</span></sup></h4>
+                              <button id="r-convert-btn" type="button" class="btn btn-primary">Convert to m<sup>2</sup></button>
                             </li>
 
                             <li id="parallelogram-result-area">
-                              <p class="fs-5 fw-semibold">3. Parallelogram <span id="result-parallelogram" class="mx-2">bh</span> cm<sup>2</sup></p>
-                              <button type="button" class="btn btn-primary">Convert to m<sup>2</sup></button>
+                              <h4 class="fs-5 fw-semibold">3. Parallelogram<span id="result-parallelogram">bh</span> <span id="p-unit-cm">cm<sup>2</sup></span><span id="p-unit-m">m<sup>2</sup></span></h4>
+                              <button id="p-convert-btn" type="button" class="btn btn-primary">Convert to m<sup>2</sup></button>
                             </li>
 
                             <li id="rhombus-result-are">
-                              <p class="fs-5 fw-semibold">4. Rhombus <span id="result-rhombus" class="mx-2">0.5 d<sub>1</sub>d<sub>2</sub></span> cm<sup>2</sup></p>
-                              <button type="button" class="btn btn-primary">Convert to m<sup>2</sup></button>
+                              <h4 class="fs-5 fw-semibold">4. Rhombus <span id="result-rhombus">0.5 d<sub>1</sub>d<sub>2</sub></span> <span id="rb-unit-cm">cm<sup>2</sup></span><span id="rb-unit-m">m<sup>2</sup></span></h4>
+                              <button id="rb-convert-btn" type="button" class="btn btn-primary">Convert to m<sup>2</sup></button>
                             </li>
 
                             <li id="pentagon-result-area">
-                              <p class="fs-5 fw-semibold">5. Pentagon <span id="result-pentagon" class="mx-2">0.5pb</span> cm<sup>2</sup></p>
-                            <button type="button" class="btn btn-primary">Convert to m<sup>2</sup></button>
+                              <h4 class="fs-5 fw-semibold">5. Pentagon <span id="result-pentagon">0.5pb</span><span id="pg-unit-cm">cm<sup>2</sup></span><span id="pg-unit-m">m<sup>2</sup></span></h4>
+                              <button id="pg-convert-btn" type="button" class="btn btn-primary">Convert to m<sup>2</sup></button>
                             </li>
 
                             <li id="ellipse-result-area">
-                              <p class="fs-5 fw-semibold">6. Ellipse <span id="result-ellipse" class="mx-2">3.14ab</span> cm<sup>2</sup></p>
-                              <button type="button" class="btn btn-primary">Convert to m<sup>2</sup></button>
+                              <h4 class="fs-5 fw-semibold">6. Ellipse <span id="result-ellipse">3.14ab</span><span id="e-unit-cm">cm<sup>2</sup></span><span id="e-unit-m">m<sup>2</sup></span></h4>
+                              <button id="e-convert-btn" type="button" class="btn btn-primary">Convert to m<sup>2</sup></button>
                             </li>
                           </ol>
                           </div>
@@ -173,6 +173,7 @@
     <script src="js/utilities.js"></script>
     <script src="js/calculate.js"></script>
     <script src="js/random-color.js"></script>
+    <script src="js/convertCmToM.js"></script>
     <script src="js/blog.js"></script>
   </body>
 </html>

@@ -47,3 +47,17 @@ const previousColor =document.getElementById("triangle-card").style.backgroundCo
 function getPreviousColor(cardId){
     document.getElementById(cardId).style.backgroundColor =previousColor;
 };
+
+// * Get text element value:
+function getTextElementValue(elementId){
+    const getElement = document.getElementById(elementId);
+    const elementValueString = getElement.innerText;
+    const elementValue = parseFloat(elementValueString);
+    return elementValue;
+};
+
+// * Convert centimiterSquare to miterSquare:
+function convertCmToM(value){
+    const meter = (value / 10000).toFixed(2);
+    return meter;
+};

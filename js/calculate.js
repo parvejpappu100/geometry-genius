@@ -13,6 +13,10 @@ document.getElementById("calculate-triangle").addEventListener('click',function(
     const getResult = (0.5 * baseTotal * hightTotal).toFixed(2);
     // * Set final result in the calculation area:
     setTextElementValue("result-triangle",getResult);
+    // * Convert cm square to meter square:
+    document.getElementById("t-unit-m").style.display = "none";
+    document.getElementById("t-unit-cm").style.display = "block";
+    document.getElementById("t-convert-btn").disabled = false;
     // * Get result area:
     const triangleResultArea = getResultAreaElementById("triangle-result-area");
     // * display block result area:
@@ -34,6 +38,10 @@ document.getElementById("calculate-reactangle").addEventListener('click',functio
     const getResult = (widthTotal * lengthTotal).toFixed(2);
     // *  Set final result in the calculation area:
     setTextElementValue("result-reactangle",getResult);
+    // * Convert cm square to meter square:
+    document.getElementById("r-unit-m").style.display = "none";
+    document.getElementById("r-unit-cm").style.display = "block";
+    document.getElementById("r-convert-btn").disabled = false;
     // * Get result area:
     const reactangleResultArea = getResultAreaElementById("reactangle-result-area");
     // * display block result area:
@@ -55,6 +63,10 @@ document.getElementById("calculate-parallelogram").addEventListener("click",func
     const finalResult = (parallelogramBaseTotal * parallelogramHigtTotal).toFixed(2);
     // * set final result value in parallelogram calculation area:
     setTextElementValue("result-parallelogram",finalResult);
+    // * Convert cm square to meter square:
+    document.getElementById("p-unit-m").style.display = "none";
+    document.getElementById("p-unit-cm").style.display = "block";
+    document.getElementById("p-convert-btn").disabled = false;
     // * Get result area:
     const parallelogramResultArea = getResultAreaElementById("parallelogram-result-area");
     // * display block result area:
@@ -76,6 +88,10 @@ document.getElementById("calculate-rhombus").addEventListener("click",function()
     const finalResult = (0.5 * rhombusD1Total * rhombusD2Total).toFixed(2);
     // * set the final result in rhombus calculation area:
     setTextElementValue("result-rhombus",finalResult);
+    // * Convert cm square to meter square:
+    document.getElementById("rb-unit-m").style.display = "none";
+    document.getElementById("rb-unit-cm").style.display = "block";
+    document.getElementById("rb-convert-btn").disabled = false;
     // * Get result area:
     const rhombusResultArea = getResultAreaElementById("rhombus-result-are");
     // * display block result area:
@@ -97,6 +113,10 @@ document.getElementById("calculate-pentagon").addEventListener("click",function(
     const finalResult = (0.5 * rangeValue * perpendicularDistanceTotal).toFixed(2);
     // * set the final result:
     setTextElementValue("result-pentagon",finalResult);
+    // * Convert cm square to meter square:
+    document.getElementById("pg-unit-m").style.display = "none";
+    document.getElementById("pg-unit-cm").style.display = "block";
+    document.getElementById("pg-convert-btn").disabled = false;
      // * Get result area:
      const pentagonResultArea = getResultAreaElementById("pentagon-result-area");
      // * display block result area:
@@ -118,6 +138,10 @@ document.getElementById("calculate-ellipse").addEventListener("click",function()
     const finalResult = (3.14 * valueOfA * valueOfB).toFixed(2);
     // * set the final result:
     setTextElementValue("result-ellipse",finalResult);
+    // * Convert cm square to meter square:
+    document.getElementById("e-unit-m").style.display = "none";
+    document.getElementById("e-unit-cm").style.display = "block";
+    document.getElementById("e-convert-btn").disabled = false;
     // * Get result area:
     const ellipseResultArea = getResultAreaElementById("ellipse-result-area");
     // * display block result area:
